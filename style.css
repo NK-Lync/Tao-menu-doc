@@ -1,0 +1,57 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Khung menu */
+#menu {
+    width: 160px;
+}
+
+/* Xóa định dạng mặc định của danh sách */
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Các mục menu */
+#menu li {
+    position: relative;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Liên kết trong menu */
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/* Đổi màu khi di chuột */
+#menu li:hover {
+    background-color: #555;
+}
+
+/* Ẩn menu con mặc định */
+#menu li ul {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    visibility: hidden;
+}
+
+/* Hiện menu con khi di chuột vào mục cha */
+#menu li:hover > ul {
+    visibility: visible;
+}
